@@ -22,7 +22,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "typecheck": "vue-tsc --emitDeclarationOnly"
+    "release": "np --no-publish && npm publish --access public --registry https://registry.npmjs.org",
+    "typecheck": "vue-tsc --noEmit"
   },
   "publishConfig": {
     "access": "public"
@@ -32,6 +33,7 @@
     "@types/node": "^18.11.15",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/tsconfig": "^0.1.3",
+    "np": "^7.6.2",
     "sass": "^1.56.2",
     "typescript": "^4.9.4",
     "vite": "^4.0.1",
