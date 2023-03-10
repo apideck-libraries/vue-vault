@@ -84,11 +84,13 @@ function onReady() {
 
 ### Props
 
-| Property         | Type    | Required | Default | Description                                                                                                                       |
-| ---------------- | ------- | -------- | ------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| token            | string  | true     | -       | The JSON Web Token returned from the [Create Session API](https://docs.apideck.com/apis/vault/reference#operation/sessionsCreate) |
-| show-attribution | boolean | false    | true    | Show "Powered by Apideck" in the backdrop of the modal backdrop                                                                   |
-| on-close         | event   | false    | -       | Function that gets called when the modal is closed                                                                                |
-| on-ready         | event   | false    | -       | Function that gets called when the modal is opened                                                                                |
-| unified-api      | string  | false    | -       | When unified-api is provided it will only show integrations from that API.                                                        |
-| service-id       | string  | false    | -       | When unified-api and service-id are provided Vault opens a single integration                                                     |
+| Property             | Type                             | Required | Default | Description                                                                                                                                      |
+| -------------------- | -------------------------------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| token                | string                           | true     | -       | The JSON Web Token returned from the [Create Session API](https://docs.apideck.com/apis/vault/reference#operation/sessionsCreate)                |
+| show-attribution     | boolean                          | false    | true    | Show "Powered by Apideck" in the backdrop of the modal backdrop                                                                                  |
+| on-close             | () => void                       | false    | -       | Function that gets called when the modal is closed                                                                                               |
+| on-ready             | () => void                       | false    | -       | Function that gets called when the modal is opened                                                                                               |
+| on-connection-change | (connection: Connection) => void | false    | -       | Function that gets called when the user updates a connection. This can be linking their account, filling out settings or adding a new connection |
+| on-connection-delete | (connection: Connection) => void | false    | -       | Function that gets called when the user deletes a connection                                                                                     |
+| unified-api          | string                           | false    | -       | When unified-api is provided it will only show integrations from that API.                                                                       |
+| service-id           | string                           | false    | -       | When unified-api and service-id are provided Vault opens a single integration                                                                    |

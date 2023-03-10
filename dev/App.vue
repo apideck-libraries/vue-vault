@@ -9,6 +9,8 @@
       :show-attribution="false"
       :on-close="onClose"
       :on-ready="onReady"
+      :on-connection-change="onConnectionChange"
+      :on-connection-delete="onConnectionDelete"
       v-slot="vaultProps"
     >
       <button @click="vaultProps.open">Open Vault</button>
@@ -29,5 +31,13 @@ function onClose() {
 
 function onReady() {
   console.log("ready!");
+}
+
+function onConnectionChange(connection) {
+  console.log("changed!", connection);
+}
+
+function onConnectionDelete(connection) {
+  console.log("ready!", connection);
 }
 </script>
