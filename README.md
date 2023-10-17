@@ -4,7 +4,7 @@ A Vue component to embed [Apideck Vault](https://www.apideck.com/products/vault)
 
 <img src="https://user-images.githubusercontent.com/8850410/208065819-716c6e02-98c9-4df5-b687-e5acd1e3c4e5.png" width="100%" />
 
-**Vue Vault** | [React Vault](https://github.com/apideck-libraries/react-vault) | [Vault JS](https://github.com/apideck-libraries/vault-js)
+**Vue Vault** | [React Vault](https://github.com/apideck-libraries/vault-react) | [Vault JS](https://github.com/apideck-libraries/vault-js)
 
 ## Installation
 
